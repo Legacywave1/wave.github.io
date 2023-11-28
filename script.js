@@ -1,29 +1,23 @@
 const words = ["Welcome", "to", "the", "wave", "world"];
 let wordIndex = 0;
 let charIndex = 0;
+let text = '';
 
-function displayWord() {
+function type() {
   if (wordIndex < words.length) {
     if (charIndex < words[wordIndex].length) {
-      document.getElementById('welcome-text').innerHTML += words[wordIndex].charAt(charIndex);
+      text += words[wordIndex].charAt(charIndex);
+      document.getElementById('welcome-text').innerHTML = text;
       charIndex++;
-      setTimeout(displayWord, 100); 
+      setTimeout(type, 200); // Adjust the typing speed (in milliseconds) here
     } else {
-      document.getElementById('welcome-text').innerHTML += " ";
       wordIndex++;
       charIndex = 0;
-      setTimeout(displayWord, 90);
+      text += ' ';
+      document.getElementById('welcome-text').innerHTML = text;
+      setTimeout(type, 500); // Adjust the delay between words (in milliseconds) here
     }
-  } else {
-    setTimeout(changeBackground, 1000);
   }
 }
 
-function changeBackground() {
-  document.querySelector('.stars').style.animation = "none";
-  document.querySelector('.stars').style.background = "url('data analytics.png')";
-  document.querySelector('.centered-text').innerHTML = "<h1>Page under maintenance, we'd be back shortly</h1>";
-  
-}
-
-displayWord();
+type();
