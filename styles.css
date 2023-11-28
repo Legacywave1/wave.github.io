@@ -6,7 +6,7 @@ body, html {
 }
 
 .stars {
-  background: url('path_to_stars_image.jpg') 0 0;
+  background: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic8.depositphotos.com%2F1560516%2F1038%2Fv%2F450%2Fdepositphotos_10382176-stock-illustration-night-sky.jpg&tbnid=osI__Y3VFhkH8M&vet=12ahUKEwiMuYzxyeWCAxXWAvsDHT8QAWoQMygGegUIARCBAQ..i&imgrefurl=https%3A%2F%2Fdepositphotos.com%2Fvectors%2Fstars-background.html&docid=RwwZqHo5jXmo5M&w=600&h=416&q=stars%20background&ved=2ahUKEwiMuYzxyeWCAxXWAvsDHT8QAWoQMygGegUIARCBAQ') 0 0;
   height: 100%;
   width: 100%;
   position: fixed;
