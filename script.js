@@ -21,7 +21,7 @@ function displayWord() {
 
 function changeBackground() {
   document.querySelector('.stars').style.animation = "none";
-  document.querySelector('.stars').style.background = "url('data analytics.jpg')";
+  document.querySelector('.stars').style.background = "url('data analytics.png')";
   document.querySelector('.centered-text').innerHTML = "<h1>Page under maintenance, we'd be back shortly</h1>";
   
 }
