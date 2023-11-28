@@ -24,7 +24,7 @@ type();
 
 function changeBackground() {
   document.querySelector('.stars').style.animation = "none"; // Stop the animation
-  document.querySelector('.stars').style.background = "url('data_analytics.jpg')"; // Replace with the path to your static image
+  document.querySelector('.stars').style.background = "url('data analytics.jpg')"; // Replace with the path to your static image
   document.querySelector('.centered-text').innerHTML = "<h1>Page under maintenance, we'd be back shortly</h1>";
   // You can add the machine learning image here as well
 }
