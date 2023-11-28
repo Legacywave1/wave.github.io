@@ -7,7 +7,7 @@ function displayWord() {
     if (charIndex < words[wordIndex].length) {
       document.getElementById('welcome-text').innerHTML += words[wordIndex].charAt(charIndex);
       charIndex++;
-      setTimeout(displayWord, 200); // Adjust the typing speed (in milliseconds) here
+      setTimeout(displayWord, 300); // Adjust the typing speed (in milliseconds) here
     } else {
       document.getElementById('welcome-text').innerHTML += " ";
       wordIndex++;
