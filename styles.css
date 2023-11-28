@@ -1,3 +1,10 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
 .stars {
   background: url('Stars.jpg') 0 0;
   height: 100%;
@@ -23,6 +30,7 @@
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
+  font-family: 'Roboto Mono', monospace;
 }
 
 h1 {
