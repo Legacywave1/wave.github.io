@@ -15,7 +15,7 @@ function displayWord() {
       setTimeout(displayWord, 50); // Adjust the delay between words (in milliseconds) here
     }
   } else {
-    setTimeout(changeBackground, 20); // Change the background after the typing is done
+    setTimeout(changeBackground, 300); // Change the background after the typing is done
   }
 }
 
