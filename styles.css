@@ -6,7 +6,7 @@ body, html {
 }
 
 .stars {
-  background: url('path_to_stars_image.jpg') 0 0;
+  background: url('Stars.jpg') 0 0;
   height: 100%;
   width: 100%;
   position: fixed;
