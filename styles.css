@@ -6,11 +6,21 @@ body, html {
 }
 
 .stars {
-  background: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic8.depositphotos.com%2F1560516%2F1038%2Fv%2F450%2Fdepositphotos_10382176-stock-illustration-night-sky.jpg&tbnid=osI__Y3VFhkH8M&vet=12ahUKEwiMuYzxyeWCAxXWAvsDHT8QAWoQMygGegUIARCBAQ..i&imgrefurl=https%3A%2F%2Fdepositphotos.com%2Fvectors%2Fstars-background.html&docid=RwwZqHo5jXmo5M&w=600&h=416&q=stars%20background&ved=2ahUKEwiMuYzxyeWCAxXWAvsDHT8QAWoQMygGegUIARCBAQ') 0 0;
+  background: url('https://www.transparenttextures.com/patterns/dark-matter.png') 0 0;
   height: 100%;
   width: 100%;
   position: fixed;
   z-index: -1;
+  animation: animateStars 50s linear infinite; /* Adjust the animation duration as needed */
+}
+
+@keyframes animateStars {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
 }
 
 .centered-text {
