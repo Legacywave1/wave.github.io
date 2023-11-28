@@ -1,26 +1,23 @@
 const words = ["Welcome", "to", "the", "wave", "world"];
 let wordIndex = 0;
 let charIndex = 0;
-let text = '';
 
-function type() {
+function displayWord() {
   if (wordIndex < words.length) {
     if (charIndex < words[wordIndex].length) {
-      text += words[wordIndex].charAt(charIndex);
-      document.getElementById('welcome-text').innerHTML = text;
+      document.getElementById('welcome-text').innerHTML += words[wordIndex].charAt(charIndex);
       charIndex++;
-      setTimeout(type, 200); // Adjust the typing speed (in milliseconds) here
+      setTimeout(displayWord, 50); // Adjust the typing speed (in milliseconds) here
     } else {
+      document.getElementById('welcome-text').innerHTML += " ";
       wordIndex++;
       charIndex = 0;
-      text += ' ';
-      document.getElementById('welcome-text').innerHTML = text;
-      setTimeout(type, 500); // Adjust the delay between words (in milliseconds) here
+      setTimeout(displayWord, 50); // Adjust the delay between words (in milliseconds) here
     }
+  } else {
+    setTimeout(changeBackground, 2000); // Change the background after the typing is done
   }
 }
-
-type();
 
 function changeBackground() {
   document.querySelector('.stars').style.animation = "none"; // Stop the animation
@@ -30,4 +27,3 @@ function changeBackground() {
 }
 
 displayWord();
-
