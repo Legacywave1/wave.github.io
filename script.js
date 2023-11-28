@@ -7,15 +7,15 @@ function displayWord() {
     if (charIndex < words[wordIndex].length) {
       document.getElementById('welcome-text').innerHTML += words[wordIndex].charAt(charIndex);
       charIndex++;
-      setTimeout(displayWord, 500); // Adjust the typing speed (in milliseconds) here
+      setTimeout(displayWord, 100); // Adjust the typing speed (in milliseconds) here
     } else {
       document.getElementById('welcome-text').innerHTML += " ";
       wordIndex++;
       charIndex = 0;
-      setTimeout(displayWord, 500); // Adjust the delay between words (in milliseconds) here
+      setTimeout(displayWord, 100); // Adjust the delay between words (in milliseconds) here
     }
   } else {
-    setTimeout(changeBackground, 2000); // Change the background after the typing is done
+    setTimeout(changeBackground, 1000); // Change the background after the typing is done
   }
 }
 
