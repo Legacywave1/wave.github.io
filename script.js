@@ -5,7 +5,7 @@ function displayWord() {
   if (index < words.length) {
     document.getElementById('welcome-text').innerHTML += words[index] + " ";
     index++;
-    setTimeout(displayWord, 1000); // Adjust the typing speed (in milliseconds) here
+    setTimeout(displayWord, 500); // Adjust the typing speed (in milliseconds) here
   } else {
     setTimeout(changeBackground, 2000); // Change the background after the typing is done
   }
