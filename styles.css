@@ -30,10 +30,15 @@ body, html {
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  font-family: 'Roboto Mono', monospace;
+
+}
+
+.welcome-text {
+  font-family: 'Roboto Mono', monospace; /* Change the font family to Roboto Mono */
+  font-size: 2em; /* Change the font size to 8em */
 }
 
 h1 {
-  font-size: 1em;
+  font-size: 4em;
   margin: 0;
 }
