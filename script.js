@@ -7,23 +7,23 @@ function displayWord() {
     if (charIndex < words[wordIndex].length) {
       document.getElementById('welcome-text').innerHTML += words[wordIndex].charAt(charIndex);
       charIndex++;
-      setTimeout(displayWord, 100); // Adjust the typing speed (in milliseconds) here
+      setTimeout(displayWord, 100); 
     } else {
       document.getElementById('welcome-text').innerHTML += " ";
       wordIndex++;
       charIndex = 0;
-      setTimeout(displayWord, 90); // Adjust the delay between words (in milliseconds) here
+      setTimeout(displayWord, 90);
     }
   } else {
-    setTimeout(changeBackground, 1000); // Change the background after the typing is done
+    setTimeout(changeBackground, 1000);
   }
 }
 
 function changeBackground() {
-  document.querySelector('.stars').style.animation = "none"; // Stop the animation
-  document.querySelector('.stars').style.background = "url('data analytics.jpg')"; // Replace with the path to your static image
+  document.querySelector('.stars').style.animation = "none";
+  document.querySelector('.stars').style.background = "url('data analytics.jpg')";
   document.querySelector('.centered-text').innerHTML = "<h1>Page under maintenance, we'd be back shortly</h1>";
-  // You can add the machine learning image here as well
+  
 }
 
 displayWord();
