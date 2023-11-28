@@ -1,26 +1,10 @@
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, sans-serif;
-  overflow: hidden;
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
 }
 
-.stars {
-  background: url('stars.jpg') 0 0;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: -1;
-  animation: animateStars 50s linear infinite; /* Adjust the animation duration as needed */
-}
-
-@keyframes animateStars {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 100% 100%;
-  }
+@keyframes blink {
+  50% { opacity: 0; }
 }
 
 .centered-text {
@@ -30,9 +14,20 @@ body, html {
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
+  font-family: 'Roboto Mono', monospace;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 8em;
   margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: .15em solid white;
+  animation: typing 5s steps(40) forwards, blink 1s infinite;
+}
+
+.cursor {
+  font-size: 8em;
+  color: white;
+  animation: blink 1s infinite;
 }
